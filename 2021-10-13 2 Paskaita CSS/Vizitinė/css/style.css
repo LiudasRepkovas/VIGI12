@@ -1,0 +1,37 @@
+/* taisyklė piešianti rėmelius pasitikrinimui */
+
+/* div {
+    border: 1px solid black;
+    margin: 5px;
+} */
+
+.stulpelis {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#pirmasStulpelis {
+    width: 136px;
+}
+
+#pirmasStulpelis img {
+    width: 100%;
+}
+
+#antrasStulpelis {
+    width: 236px;
+}
+
+#pagrindinis {
+    width: 400px;
+}
+
+#antrasStulpelis p {
+    color: grey;
+    font-weight: bold;
+}
+
+#antrasStulpelis h1 {
+    margin-top: 0;
+    border-bottom: 2px solid black
+}

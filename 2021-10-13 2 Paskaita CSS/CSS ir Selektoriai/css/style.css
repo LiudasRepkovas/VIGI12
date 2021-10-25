@@ -1,0 +1,32 @@
+div {
+    border: 3px solid black;
+}
+
+div.klase1 {
+    border: 3px dotted red;
+}
+
+div.klase1 {
+    border: 3px dotted violet;
+}
+
+div.klase1 {
+    border: 3px dotted brown;
+}
+
+div.klase1 div {
+    background-color: yellow;
+}
+
+.klase1{
+    color: blue;
+}
+
+p.klase1{
+    color: cyan;
+}
+
+#idNumerisVienas {
+    color: red;
+}
+

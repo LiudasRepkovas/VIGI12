@@ -1,0 +1,37 @@
+body * {
+    border: 1px solid black;
+}
+
+/* sintakses pavyzdys */
+
+div.pavyzdys {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* 1 skaicius nustato vienoda paddinga is visu pusiu */
+    padding: 20px;
+    /* 2 skaiciai - pirmas nustato virsu ir apacia, o antras kaire ir desine */
+    padding: 40px 10px;
+    
+    /* 3 skaiciai - pirmas nustato virsu, antras kaire ir desine, trecias apacia */
+    padding: 5px 100px 50px; 
+
+    /* 4 skaiciai - virsus, desine, apacia, kaire (pagal laikrodzio rodykle) */
+    padding: 10px 20px 30px 40px;
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+}
+
+span {
+    padding: 0 10px;
+    margin: 10px;
+}
+
+div.inlineBlock{
+    display: inline-block;
+}

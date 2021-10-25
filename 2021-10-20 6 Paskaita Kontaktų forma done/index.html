@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Accomodation form</title>
+</head>
+<body>
+    <div id="formWrapper">
+        <h1>
+            Conference Registration Form
+        </h1>
+        <p>
+            We thank you for your in participating at our conference! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores harum voluptates ratione? Odit eius culpa, voluptatem aut eaque incidunt pariatur!
+        </p>
+        <form autocomplete="off">
+            <fieldset>
+                <legend>Attendee's Name<span class="red">*</span></legend>
+                <div class="row">
+                    <div class="column">
+                        <input placeholder="Name" name="name" type="text">
+                    </div><div class="column">
+                        <input placeholder="Surname" name="surname" type="text">
+                    </div>
+                    <div class="description">Will appear on your conference badge</div>
+                </div>
+            </fieldset>
+            <div class="fieldsetRow">
+                <div class="row">
+                    <div class="column">
+                        <fieldset>
+                            <legend>Email<span class="red">*</span></legend>
+                            <input type="email" name="email"/>
+                            <div class="description">Will appear on your conference badge</div>
+                        </fieldset>
+                    </div><div class="column">
+                        <fieldset>
+                            <legend>Company/ Organization<span class="red">*</span></legend>
+                            <input type="text" name="company"/>
+                            <div class="description">You will receive an email with an activation link receive an email with an activation link</div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Phone<span class="red">*</span></legend>
+                <div class="row">
+                    <input type="tel" name="phone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Address<span class="red">*</span></legend>
+                <div class="row">
+                    <input type="text" name="address1" placeholder="Street Address">
+                </div>
+                <div class="row">
+                    <input type="text" name="address2" placeholder="Street Address Line 2">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <input type="text" name="city" placeholder="City">
+                    </div><div class="column">
+                        <input type="text" name="redion" placeholder="Region">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <input type="text" name="zip" placeholder="Postal / Zip cloudflare">
+                    </div><div class="column">
+                        <select>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Latvia">Latvia</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Conference Program Title</legend>
+                <div class="row">
+                    <input type="text" name="programTitle">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Attending<span class="red">*</span></legend>
+                <div>
+                    <input id="attendingMorningId" type="checkbox" name="attendingMorning">
+                    <label for="attendingMorningId">Morning Sessions</label>
+                </div>
+                <div>
+                    <input id="afternoonSessionsId" type="checkbox" name="afternoonSessions">
+                    <label for="afternoonSessionsId">Afternoon Sessions</label>
+                </div>
+                <div>
+                    <input id="workshopsId" type="checkbox" name="workshops">
+                    <label for="workshopsId">Workshops</label>
+                </div>
+                <div>
+                    <input id="banquetId" type="checkbox" name="banquet">
+                    <label for="banquetId">Evening Banquet</label>
+                </div>
+                <div class="description">Will appear on your conference badge</div>
+            </fieldset>
+            <fieldset>
+                <legend>Do you require accomodations?<span class="red">*</span></legend>
+                <div>
+                    <input required id="accomodationsRequiredYesId" type="radio" name="accomodationsRequired">
+                    <label for="accomodationsRequiredYesId">Yes</label>
+                </div>
+                <div>
+                    <input id="accomodationsRequiredNoId" type="radio" name="accomodationsRequired">
+                    <label for="accomodationsRequiredNoId">No</label>
+                </div>
+            </fieldset>
+            <!-- <button id="registerButton" type="submit">REGISTER</button> -->
+        </form>
+        <a href="http://google.com">
+            <button id="registerButton">REGISTER</button>
+        </a>
+
+    </div>
+</body>
+</html>

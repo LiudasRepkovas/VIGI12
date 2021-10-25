@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(0, 17, 56) 0%, rgba(9,9,121,1) 35%, rgb(0, 89, 231) 100%); 
+}
+
+.block {
+    display: inline-block;
+    width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 1px solid white;
+    margin: 20px;
+    background-color:rgb(102, 189, 246)
+}
+
+.person {
+    background-color: rgb(150, 205, 245);
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.person img {
+    width: 100px;
+}
+
+.person h3 {
+    margin: 20px 0;
+}
+
+.block h1 {
+    margin: 30px 0 10px 0;
+}
