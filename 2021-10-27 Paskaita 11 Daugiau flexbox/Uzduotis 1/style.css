@@ -42,13 +42,13 @@ div.feature:nth-last-of-type(2){
     justify-content: center;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 760px) {
     .signUp, .feature {
         flex-basis: 50%;
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .signUp {
         order: 1;
         flex-basis: 100%;
