@@ -1,0 +1,63 @@
+.mainWrapper{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header{ 
+    background: skyblue;
+    height: 10rem;
+}
+
+.content{ 
+    height: 20rem;
+    background: gray;
+}
+
+.signUp {
+    height: 10rem;
+    background: lightblue;
+}
+
+.feature {
+    height: 10rem;
+}
+
+div.feature:nth-last-of-type(3){
+    background: orange;
+}
+
+div.feature:nth-last-of-type(2){
+    background: rosybrown;
+}
+.feature:nth-last-of-type(1){
+    background: violet;
+}
+.header, .content, .signUp, .feature {
+    flex: 0 1 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 760px) {
+    .signUp, .feature {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .signUp {
+        order: 1;
+        flex-basis: 100%;
+    }
+    .content {
+        order: 2;
+    }
+    .feature {
+        flex-basis: 33.33%;
+    }
+
+}
