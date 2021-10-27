@@ -5,3 +5,53 @@
 */
 
 /* YOUR CODE HERE ir beje sėkmės*/
+
+header {
+    padding: 25px 1.875rem 0 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 9.6875rem;
+}
+
+.menuIcon i {
+    font-size: 1rem;
+}
+
+.photosWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 3.5rem;
+    padding: 1.75rem 1.875rem; 
+}
+
+.photosWrapper > div {
+    height: 17.125rem;
+    flex: 0 1 calc(50% - 1.75rem);
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 1.75rem); */
+}
+
+.photosWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.links {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .menuIcon {
+        display: none;
+    }
+    .links {
+        display: block;
+    }
+}
