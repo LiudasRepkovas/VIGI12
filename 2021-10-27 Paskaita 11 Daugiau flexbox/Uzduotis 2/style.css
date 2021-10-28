@@ -5,6 +5,9 @@
 */
 
 /* YOUR CODE HERE ir beje sėkmės*/
+* {
+    box-sizing: border-box;
+}
 
 header {
     padding: 25px 1.875rem 0 1.875rem;
@@ -15,6 +18,9 @@ header {
 
 .logo img {
     width: 9.6875rem;
+}
+.menuIcon{
+    cursor: pointer;
 }
 
 .menuIcon i {
@@ -32,10 +38,27 @@ header {
 .photosWrapper > div {
     height: 17.125rem;
     flex: 0 1 calc(50% - 1.75rem);
-    /* flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: calc(50% - 1.75rem); */
+    position: relative;
 }
+
+.photosWrapper > div:after {
+    content: '';
+    background: rgb(88, 88, 88);
+    position: absolute;
+    /* z-index: 1; */
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    opacity: 0.7;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  
+.photosWrapper > div:hover:after {
+    opacity: 0;
+  }
 
 .photosWrapper img {
     height: 100%;
@@ -45,13 +68,126 @@ header {
 
 .links {
     display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    width: 100%;
+    opacity: 1;
+    font-family: Lato, sans-serif;
+    z-index: 1100000;
+    padding: 50px 0;
 }
 
-@media only screen and (min-width: 768px) {
+.links > div {
+    z-index: 1100;
+    flex: 1 0 100%;
+    padding: 20px;
+}
+
+.links .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.links .social, .links .bookNow {
+    font-size: 11px;
+}
+
+.links .social {
+    display: flex;
+    justify-content: center;
+}
+
+.links .social a {
+    padding: 10px
+}
+
+.links .navigation a {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.links .social a:first-of-type, .links .navigation a:first-of-type {
+    margin-left: 0;
+}
+
+
+.links .bookNow {
+    width: 6.25rem;
+    height: 2.75rem;
+    color: #fff;
+    background: #b6b6b6;
+    border: none;
+    cursor: pointer;
+}
+
+.links a {
+    color: #151515;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    opacity: 0.5;
+}
+
+.links:hover {
+    display:flex
+}
+
+.menuIcon:focus + div {
+    display: flex;
+}
+
+@media only screen and (min-width: 820px) {
+        
+    .links .social a, .links .navigation a {
+        margin-left: 0.9rem;
+    }
     .menuIcon {
         display: none;
     }
+    .menu {
+        flex: 1 0;
+        justify-content: space-around;
+    }
     .links {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .links .bookNow {
+        margin-left: 1.4rem;
+    }
+    .links .social {
+        margin-left: 1.80rem;
+    }
+    .photosWrapper > div {
+        flex: 0 1 calc(33.33% - 1.75rem);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .links .bookNow {
+        margin-left: 3.1875rem;
+    }
+    .links .social {
+        margin-left: 2.625rem;
+    }
+    .photosWrapper > div {
+        flex: 0 1 calc(20% - 1.75rem);
+    }
+    .links .social a, .links .navigation a {
+        margin-left: 1.625rem;
     }
 }
